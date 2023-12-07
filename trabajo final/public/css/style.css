@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Playfair+Display&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Pagina Principal*/
+header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: flex;
+}
+.headerlogo {
+    position: fixed;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.fondomarino {
+    background-image: url(../img/cover.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'PlayFair Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.textoprincipal {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    opacity: 3;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 15px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/*cuerpo de la pagina, cartas de navegacion*/
+.espacioblanco0 {
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    padding: 24px 0px;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.card img {
+    height: 210px;
+    width: 100%;
+}
+
+/*pie de la pagina FOOTER*/
+.piepagina {
+    width: 100%;
+    background-color: black;
+}
+.piepagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    align-content: center;
+    padding: 45px 0px;
+}
+.piepagina .grupo1 .box figure {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.piepagina .grupo1 .box figure img {
+    width: 170px;
+}
+.piepagina .grupo1 .box h3 {
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 29px;
+    text-align: center;
+}
+.piepagina .grupo1 .box p {
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: auto;
+}
+.rrss {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: aqua; /* Cambia el color al pasar el mouse sobre el icono */
+}
+
+/*modelo responsive*/
+@media screen and (max-width: 800px) {
+    .piepagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px, 0px;
+    }
+    
+}
+/*Pagina NUESTRA MISION*/
+/*header fijo*/
+header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: flex;
+}
+.headerlogo {
+    position: fixed;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+/*Fondo principal de la pagina*/
+.fondoNM {
+    background-image: url(../img/NM.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'PlayFair Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.tituloNM {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.7);
+    opacity: 3;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 15px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.espacioblanco {
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    padding: 64px 0px;
+}
+.container1 {
+    justify-content: center;
+    margin: 0px 125px;
+    padding: 0px 12px;
+    grid-template-columns: 1;
+    display: grid;
+}
+.subtitulo {
+    color: black;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+    margin: 10px, 70px, 24px;
+    text-align: center;
+}
+.subtitulo ::after{
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    bottom: -4px;
+    background: #231F20;
+    width: 100%;
+}
+.subtitulo1 {
+    font-size: 2rem;
+    margin-block-start: 0.83em;
+    margin-bottom: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+    font-weight: 300;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+}
+.textoNM {
+    font-size: 17px;
+    color: black;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: inline-block;
+}
+.textoNM::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    bottom: -50px;
+    background: #231F20;
+    width: 100%;
+}
+/*carrousel de la pagina*/
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*pagina QUIENES SOMOS*/
+/*header fijo*/
+header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: flex;
+}
+.headerlogo {
+    position: fixed;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+/*Fondo principal de la pagina*/
+.fondoQS {
+    background-image: url(../img/QS.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'PlayFair Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.tituloQS {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    opacity: 3;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 15px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.espacioblanco1 {
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    padding: 64px 0px;
+}
+.container2 {
+    justify-content: center;
+    margin: 0px 125px;
+    padding: 0px 12px;
+    grid-template-columns: 1;
+    display: grid;
+}
+.subtitulo1QS {
+    color: black;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    font-size: 13px;
+    font-family: 'Jost', sans-serif;
+    margin: 10px, 70px, 24px;
+    text-align: center;
+}
+.subtitulo1QS ::after{
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    bottom: -4px;
+    background: #231F20;
+    width: 100%;
+}
+.subtitulo2 {
+    font-size: 2rem;
+    margin-block-start: 0.83em;
+    margin-bottom: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+    font-weight: 300;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.textoQS {
+    font-size: 17px;
+    color: black;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: inline-block;
+    justify-content: center;
+}
+.textoQS::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    bottom: -50px;
+    background: #231F20;
+    width: 100%;
+}
+
+/*Pagina SUMATE AL EQUIPO*/
+/*header fijo*/
+header {
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: flex;
+}
+.headerlogo {
+    position: fixed;
+    width: 100%;
+    color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+/*Fondo principal de la pagina*/
+.sect {
+    width: 100%;
+    height: 100vh;
+}
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100hv;
+    z-index: -1;
+    max-width: 100%;
+}
+.tituloSE {
+    margin: 0;
+    padding-top: 18rem;
+    padding-left: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.espacioblanco2 {
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    padding: 34px 0px;
+}
+/*Estilos de Formulario*/
+.containerform {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.containerform p {
+    font-family: 'Jost', sans-serif;
+    font-size: 23px;
+    line-height: 1.6;
+    margin-top: 60px;
+    text-align: center;
+}
+.containerform iframe {
+    display: inline-block;
+    margin-bottom: 60px;
+    width: 500px;
+    height: 300px;
+    margin-right: 10px;
+}
+.container3 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.textoform {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+font-size: 30px;
+color: black;
+}
+.contact-form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color:#6a6a6a;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
